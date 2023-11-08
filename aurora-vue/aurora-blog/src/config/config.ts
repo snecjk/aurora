@@ -1,7 +1,7 @@
 export default {
   qqLogin: {
-    QQ_APP_ID: '101999415',
-    QQ_REDIRECT_URI: 'https://www.linhaojun.top/oauth/login/qq'
+    QQ_APP_ID: '102030463',
+    QQ_REDIRECT_URI: 'https://www.hytt.love/oauth/login/qq'
   },
   routes: [
     {

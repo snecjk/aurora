@@ -5,9 +5,9 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://mysql的ip:3306/aurora?serverTimezone=Asia/Shanghai&allowMultiQueries=true
-    username: 账号
-    password: 密码
+    url: jdbc:mysql://119.23.53.249:3306/aurora?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: a
     hikari:
       minimum-idle: 10
       idle-timeout: 180000
@@ -19,9 +19,9 @@ spring:
       connection-test-query: SELECT 1
 
   redis:
-    host: redis的ip
+    host: 119.23.53.249
     port: 6379
-    password: 密码
+    password: a
     database: 0
     lettuce:
       pool:
@@ -31,10 +31,10 @@ spring:
         max-wait: 10000
 
   rabbitmq:
-    host: rabbitmq的ip
+    host: 119.23.53.249
     port: 5672
-    username: 账号
-    password: 密码
+    username: guest
+    password: guest
     listener:
       simple:
         retry:
@@ -44,12 +44,12 @@ spring:
 
   elasticsearch:
     rest:
-      uris: es的ip:9200
+      uris: 119.23.53.249:9200
 
   mail:
     host: smtp.163.com
-    username: 邮箱
-    password: 密码
+    username: 19894306932@163.com
+    password: ADYDXOZMMWSHEIZP
     default-encoding: UTF-8
     protocol: smtp
     port: 465
@@ -83,22 +83,22 @@ search:
 upload:
   mode: oss
   oss:
-    url: http://Bucket域名/
-    endpoint: OSS配置endpoint
-    accessKeyId: OSS配置accessKeyId
-    accessKeySecret: OSS配置accessKeySecret
-    bucketName: OSS配置bucketName
-  minio:
-    url: http://minio的ip:9000/
-    endpoint: http://minio的ip:9000
-    accesskey: 用户名
-    secretKey: 密码
-    bucketName: 桶的名称
+    url: http://aurora-blog.oss-cn-beijing.aliyuncs.com/
+    endpoint: oss-cn-beijing.aliyuncs.com
+    accessKeyId: LTAI5tEzbfPG8qBoVqTmBgFS
+    accessKeySecret: I88sLOkyvTkuxjqc9K3Kghpm3iEwlG
+    bucketName: aurora-blog
+#  minio:
+#    url: http://minio的ip:9000/
+#    endpoint: http://minio的ip:9000
+#    accesskey: 用户名
+#    secretKey: 密码
+#    bucketName: 桶的名称
 
 website:
-  url: https://前台域名
+  url: https://www.hytt.com
 
 qq:
-  app-id: QQ APPID
+  app-id: 102030463
   check-token-url: https://graph.qq.com/oauth2.0/me?access_token={access_token}
   user-info-url: https://graph.qq.com/user/get_user_info?openid={openid}&access_token={access_token}&oauth_consumer_key={oauth_consumer_key}
