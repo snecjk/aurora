@@ -1,7 +1,10 @@
 export default {
+  captcha: {
+    TENCENT_CAPTCHA: '2091489673'
+  },
   qqLogin: {
     QQ_APP_ID: '102030463',
-    QQ_REDIRECT_URI: 'https://www.hytt.love/oauth/login/qq'
+    QQ_REDIRECT_URI: 'https://blog.hytt.love/oauth/login/qq'
   },
   routes: [
     {
