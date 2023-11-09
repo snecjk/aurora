@@ -96,7 +96,7 @@ upload:
 #    bucketName: 桶的名称
 
 website:
-  url: https://www.hytt.com
+  url: https://blog.hytt.com
 
 qq:
   app-id: 102030463

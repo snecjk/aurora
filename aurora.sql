@@ -1,4 +1,3 @@
-create  database  aurora;
 USE aurora;
 
 SET NAMES utf8mb4;
